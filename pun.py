@@ -43,7 +43,7 @@ def setup():
 
 def name(ssid, pswrd):
 	os.system('uci set wireless.@wifi-iface[0].ssid="' + ssid + '"')
-  os.system('uci set wireless.@wifi-iface[0].key="' +pswrd + '"')
+	os.system('uci set wireless.@wifi-iface[0].key="' + pswrd + '"')
 	os.system("wifi") #restart network
 	print("Restarting network...")
 	
